@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sharnu.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <div id="app">
+        <div id="login ">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="email">
+                <input type="password" id="pass" placeholder="password">
+                <button type="submit">login</button>
+
+
+            </form>
+        </div>
+        <div id="register">
+        <h2>Registration</h2>
+        <form id="Register">
+        <input type="text" id="name" placeholder="name" required>
+        <input type="email" id="email" placeholder="email" required>
+        <input type="pass" id="pass" placeholder="pass" required>
+        <input type="tel" id="mobile" placeholder="mobile number" required>
+
+        <input type="text" id="address" placeholder="address" required>
+        <button type="submit">Register</button>
+
+      </form>
+
+    </div>
+    <div id="dashboard">
+    <h2>Dashboard</h2>
+    <div id="add">
+    <form id="add-task-form">
+        <input type="text" id="task-name" placeholder="task name" required>
+        <input type="datetime-local" id="task-date-time" required>
+        <select name="task assigned to" required>
+            <option value="">Assign to</option>
+        </select>
+        <button type="submit">Add task</button>
+
+      </form>
+    </div>
+    <div id="task-list">
+        <h3>Task List</h3>
+        <ul id="tasks"></ul>
+
+    </div>
+</div>
+</div>
+<script src="sharnu.js"></script>
+</body>
+</html>
